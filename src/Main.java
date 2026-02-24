@@ -1,4 +1,6 @@
+import java.util.Arrays;
 public class Main {
+
     public static void main(String[] args) {
 // Задача 1
 
@@ -42,52 +44,12 @@ public class Main {
             }
         }
         System.out.println();
-
-        // Задача 3
-
-// Печать первого массива в обратном порядке
-        for (int i = firstArray.length - 1; i >= 0; i--) {
-            System.out.print(firstArray[i]);
-            if (i > 0) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println();
-
-// Печать второго массива в обратном порядке
-        for (int i = secondArray.length - 1; i >= 0; i--) {
-            System.out.print(secondArray[i]);
-            if (i > 0) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println();
-
-// Печать третьего массива в обратном порядке
-        for (int i = myFriends.length - 1; i >= 0; i--) {
-            System.out.print(myFriends[i]);
-            if (i > 0) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println();
-
         // Задача 4
-
         for (int i = 0; i < firstArray.length; i++) {
             if (firstArray[i] % 2 != 0) {
                 firstArray[i] += 1;
             }
         }
-
-        System.out.print("[");
-        for (int i = 0; i < firstArray.length; i++) {
-            System.out.print(firstArray[i]);
-
-            if (i < firstArray.length - 1) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println("]");
+        System.out.println(Arrays.toString(firstArray));
     }
 }
