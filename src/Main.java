@@ -13,5 +13,34 @@ public class Main {
 
 // 3. Произвольный массив (типо имена)
         String[] myFriends = {"Влада", "Иван", "Анна", "Алексей"};
+
+        // Задача 2
+
+// int
+        for (int i = 0; i < firstArray.length; i++) {
+            System.out.print(firstArray[i]);
+            if (i < firstArray.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println(); // Перенос на новую строку
+
+// double
+        for (int i = 0; i < secondArray.length; i++) {
+            System.out.print(secondArray[i]);
+            if (i < secondArray.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+// String
+        for (int i = 0; i < myFriends.length; i++) {
+            System.out.print(myFriends[i]);
+            if (i < myFriends.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
     }
 }
