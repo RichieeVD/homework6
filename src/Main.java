@@ -1,15 +1,69 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Arrays;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main {
+
+    public static void main(String[] args) {
+        // Задача 1
+        int[] firstArray = new int[]{1, 2, 3};
+        double[] secondArray = {1.57, 7.654, 9.986};
+        String[] myFriends = {"Влада", "Иван", "Анна", "Алексей"};
+
+        // Задача 2
+        for (int i = 0; i < firstArray.length; i++) {
+            System.out.print(firstArray[i]);
+            if (i < firstArray.length - 1) {
+                System.out.print(", ");
+            }
         }
+        System.out.println();
+
+        for (int i = 0; i < secondArray.length; i++) {
+            System.out.print(secondArray[i]);
+            if (i < secondArray.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        for (int i = 0; i < myFriends.length; i++) {
+            System.out.print(myFriends[i]);
+            if (i < myFriends.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        // Задача 3
+        for (int i = firstArray.length - 1; i >= 0; i--) {
+            System.out.print(firstArray[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        for (int i = secondArray.length - 1; i >= 0; i--) {
+            System.out.print(secondArray[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        for (int i = myFriends.length - 1; i >= 0; i--) {
+            System.out.print(myFriends[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        // Задача 4
+        for (int i = 0; i < firstArray.length; i++) {
+            if (firstArray[i] % 2 != 0) {
+                firstArray[i] += 1;
+            }
+        }
+        System.out.println(Arrays.toString(firstArray));
     }
 }
