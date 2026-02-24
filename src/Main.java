@@ -71,5 +71,23 @@ public class Main {
             }
         }
         System.out.println();
+
+        // Задача 4
+
+        for (int i = 0; i < firstArray.length; i++) {
+            if (firstArray[i] % 2 != 0) {
+                firstArray[i] += 1;
+            }
+        }
+
+        System.out.print("[");
+        for (int i = 0; i < firstArray.length; i++) {
+            System.out.print(firstArray[i]);
+
+            if (i < firstArray.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
     }
 }
