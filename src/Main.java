@@ -1,15 +1,17 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+// Задача 1
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+// 1. Целочисленный массив через ключевое слово new
+        int[] firstArray = new int[3];
+        firstArray[0] = 1;
+        firstArray[1] = 2;
+        firstArray[2] = 3;
+
+// 2. Массив дробных чисел, заполненный сразу
+        double[] secondArray = {1.57, 7.654, 9.986};
+
+// 3. Произвольный массив (типо имена)
+        String[] myFriends = {"Влада", "Иван", "Анна", "Алексей"};
     }
 }
